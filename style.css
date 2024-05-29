@@ -1,0 +1,200 @@
+header {
+    background: rgba(31, 31, 31, 0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  nav {
+    float: right;
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  nav ul li {
+    float: left;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #000000;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: rgb(204, 93, 232, 0.7);
+    color: #ffffff;
+    border-radius: 10px;
+  }  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0; /* Alinea la barra de navegación al lado derecho */
+  background-color: #D3D5D5;
+  padding: 10px;
+  z-index: 1000;
+  transition: top 0.3s;
+  border-radius: 10px; /* Redondea solo la esquina inferior izquierda */
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  margin-top: 120px; /* Ajusta esto según el tamaño de la barra de navegación */
+}
+
+.hamburguesa {
+  display: none; /* Se oculta en pantallas más pequeñas */
+}
+
+@media screen and (max-width: 600px) {
+  .menu ul {
+      display: none;
+  }
+  .menu.responsive ul {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 50px;
+      right: 0; /* Alinea el menú desplegable al lado derecho */
+      background-color: #D3D5D5;
+      border-radius: 0 0 10px 0; /* Redondea solo la esquina inferior izquierda */
+  }
+  .menu.responsive ul li {
+      text-align: center;
+  }
+  .hamburguesa {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+}
+  body{
+  font-family: Raleway, Helvetica, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("https://lh3.googleusercontent.com/d/1XLrdD5iujgDhHUjZ7OdONgv7qd1wVu8p");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+table{
+  text-align: justify;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-spacing: 25px;
+}
+.experiencia{
+  margin: auto;
+  border-radius: 20px;
+  background: rgb(204, 93, 232, 0.2);
+}
+.experienciak{
+  align-items: center;
+  border-radius: 20px;
+}
+.tablaExperiencia{
+  margin: auto;
+  border-radius: 20px;
+  align-content: center;
+  background: rgb(204, 93, 232, 0.7);
+  border: 0px;
+}
+.DG,
+.ED,
+.E-L{
+  color:#ffffff;
+  background: rgb(204, 93, 232);
+  align-items: center;
+  position: center;
+    }
+.funciones,
+.eLearning,
+.editorial,
+.grafico{
+  text-align: justify;
+  vertical-align: top;
+}
+.book {
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.gallery img {
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.gallery-container {
+  position: relative;
+  width: 450px; /* width of a single image */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.gallery .row {
+  display: flex;
+}
+
+.gallery .row a {
+  flex: 0 0 450px; /* width of a single image */
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
+
+footer{
+  font-family: Raleway, Helvetica, sans-serif;
+  text-align: left;
+}

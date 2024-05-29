@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <nav class="menu" style="background-color: #D3D5D5; padding: 10px;">
+        <span class="hamburguesa" onclick="toggleMenu()">&#9776;</span>
+        <ul>
+            <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEIUlEQVR4nO1ZX2wURRwebEyNqAlt7uY3W2xrAWvSGIkXCTl7M70WtDwotFwrtrslmigJajAB44OJvikmPiAajPikUZu0PKhoQgKmAv6DmwbpgwECJATC7qk8EApqoR0z5+05t+wu1+tubZP9ki+b2/lt5vvm72/mEIoQIUIENxCSTgCwHQD0PULYA2g+ASC1CQi9AYQJSQz0TwCWQfMBmNBXbeEOTmHMXkFzFz1VGOhuVTQmNIuBnigxAuxthNAC+UU83toEhI4AYRMOsxOY0O9isfSSWZG+dGlnNSZ0uFQo3V9bm7x78eKVNRjoYYex4YYGdocU6dFbBdKR0MXX17cuchH4CUKJ21WDQNiQQ+C3GNjffgZkeajia+9NakDYmGOIvIsQuu3m6J4qTOguL7FIgdf7gNFTBYSeViqbjBO6xSt61Mh1Zw0r93Jy57ic0P+7gViM3WVPPgz0L4xpr1cs77e2ZHVzkhuWkHxr1eAU0domVaExLZWcVQMSUjQA+4yQtkfdygUSC7hhbbeFq/xwzT5BSFuxJzCwa3HStjZUA4SkHsM49QIhiTtvFXvqpVPV3LAG3cTb3Nm5V9RrHdeVVecGAN0cigEA+kZx7ALb4Rc71nduUVa3DvqJt/lNZky0NHZfLWdyV4jOaozZHsdK42ng2EazMatbv5Yjnhc4suG0SC7beCVwAxivXgiEWqVrM90nJ7BbPO+zHuSGdX464nmB3/edE4+3vOjsicmamhX3VCRe0zpqAdgPpRsU+1jdoFSM9lsd3DAvVyKeF3hUvyj6E69fdaYj8Xg7nmbLp+7DwE66dGc+h3Eiq+cGuG5OzEQ8V7itdZdzhz6raenmssQD0EeAsFy54zG/xhvmVFDieYFvdnx+nRCmpOTskrpXuCJWl34ICB1XPirpTjV2qEdUcd38IGjhXOH7a/ZO1WntSqZKxzWNLfdr/a3KZP09HmcrvQxkdXN3mOJ5gZ8+eVjU160qNqrU6JucYWCHJDWt9f68KQ8D3LCuhSV6cO2P4vkV2/NP+fuL7tHLti6p0XcY3dQr3gZCa/WWhq58ffJpv5uW6JkY2N97QnydOe5KWVaOAVDqnDUDQ11HxMNLnvY5Xf3LRNMGMbzu57lnINX8zC3F20w1Pzv3DGhauhi3vKnXlXZ5ndY+9wyAS6WVxPDIgANRDxjREBLRJIYyViF7mZTPebkKfZX5RbxGP8o/56UBXmGOw8M3QIv3NvKSNmwDP/VfcN2xKzcA7Ph/B2z2GxB2RtIrXfCjasArprnhiWJMctlAIAaMcpO0oPnO6uGZG5AghD2HgV6YLeEtjV3yUF8ytFAQkPcz8m8hyS/XH/vD6+Dixz3rjviWH3jqpMvcMC0UNLIDFzPyvr+SyTw9mtZRPbc+cAMRIqA8/gHAamp0SDevmwAAAABJRU5ErkJggg==" width="30"></a></li>
+            <li><a href="#acercaDeMi">Acerca de mí |</a></li>
+            <li><a href="#experienciak">Experiencia |</a></l>
+            <li><a href="#servicio">Servicios |</a></li>
+            <li><a href="#contact">Contacto |</a></li>
+         </ul>
+      </nav>       
+      <link href="style.css" rel="stylesheet">
+    </head>
+<div>
+<body>
+    <nav class="menu" id="menu";>
+        <span class="hamburguesa" onclick="toggleMenu()">&#9776;</span>
+        <ul>
+            <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEIUlEQVR4nO1ZX2wURRwebEyNqAlt7uY3W2xrAWvSGIkXCTl7M70WtDwotFwrtrslmigJajAB44OJvikmPiAajPikUZu0PKhoQgKmAv6DmwbpgwECJATC7qk8EApqoR0z5+05t+wu1+tubZP9ki+b2/lt5vvm72/mEIoQIUIENxCSTgCwHQD0PULYA2g+ASC1CQi9AYQJSQz0TwCWQfMBmNBXbeEOTmHMXkFzFz1VGOhuVTQmNIuBnigxAuxthNAC+UU83toEhI4AYRMOsxOY0O9isfSSWZG+dGlnNSZ0uFQo3V9bm7x78eKVNRjoYYex4YYGdocU6dFbBdKR0MXX17cuchH4CUKJ21WDQNiQQ+C3GNjffgZkeajia+9NakDYmGOIvIsQuu3m6J4qTOguL7FIgdf7gNFTBYSeViqbjBO6xSt61Mh1Zw0r93Jy57ic0P+7gViM3WVPPgz0L4xpr1cs77e2ZHVzkhuWkHxr1eAU0domVaExLZWcVQMSUjQA+4yQtkfdygUSC7hhbbeFq/xwzT5BSFuxJzCwa3HStjZUA4SkHsM49QIhiTtvFXvqpVPV3LAG3cTb3Nm5V9RrHdeVVecGAN0cigEA+kZx7ALb4Rc71nduUVa3DvqJt/lNZky0NHZfLWdyV4jOaozZHsdK42ng2EazMatbv5Yjnhc4suG0SC7beCVwAxivXgiEWqVrM90nJ7BbPO+zHuSGdX464nmB3/edE4+3vOjsicmamhX3VCRe0zpqAdgPpRsU+1jdoFSM9lsd3DAvVyKeF3hUvyj6E69fdaYj8Xg7nmbLp+7DwE66dGc+h3Eiq+cGuG5OzEQ8V7itdZdzhz6raenmssQD0EeAsFy54zG/xhvmVFDieYFvdnx+nRCmpOTskrpXuCJWl34ICB1XPirpTjV2qEdUcd38IGjhXOH7a/ZO1WntSqZKxzWNLfdr/a3KZP09HmcrvQxkdXN3mOJ5gZ8+eVjU160qNqrU6JucYWCHJDWt9f68KQ8D3LCuhSV6cO2P4vkV2/NP+fuL7tHLti6p0XcY3dQr3gZCa/WWhq58ffJpv5uW6JkY2N97QnydOe5KWVaOAVDqnDUDQ11HxMNLnvY5Xf3LRNMGMbzu57lnINX8zC3F20w1Pzv3DGhauhi3vKnXlXZ5ndY+9wyAS6WVxPDIgANRDxjREBLRJIYyViF7mZTPebkKfZX5RbxGP8o/56UBXmGOw8M3QIv3NvKSNmwDP/VfcN2xKzcA7Ph/B2z2GxB2RtIrXfCjasArprnhiWJMctlAIAaMcpO0oPnO6uGZG5AghD2HgV6YLeEtjV3yUF8ytFAQkPcz8m8hyS/XH/vD6+Dixz3rjviWH3jqpMvcMC0UNLIDFzPyvr+SyTw9mtZRPbc+cAMRIqA8/gHAamp0SDevmwAAAABJRU5ErkJggg==" width="30"></a></li>
+            <li><a href="#acercaDeMi">Acerca de mí |</a></li>
+            <li><a href="#experienciak">Experiencia |</a></l>
+            <li><a href="#servicio">Servicios |</a></li>
+            <li><a href="#contact">Contacto |</a></li>
+         </ul>
+    </nav>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var menu = document.getElementById("menu");
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                menu.style.top = "0";
+            } else {
+                menu.style.top = "0";
+            }
+        }
+
+        function toggleMenu() {
+            var x = document.getElementById("menu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+    <table class="hola">
+        <td>
+            <img src="https://lh3.googleusercontent.com/d/12zRbjiEBdAVEiRps5pCNxIHSWsPgvgoQ" width="300" height="300"/>
+        </td>
+        <td>
+        <h2>Hola soy</h2>
+        <h1>Karem Angélica Lucía Malagón Bobadilla</h1>
+        <button align="left" style="border-radius: 10px;">Saber más <img src="data:image/png;base64,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" width="20"/></button>
+    </td>
+    </table>
+    <div class="acercaDeMi" id="acercaDeMi">
+        <h2 align="center">Acerca de mí</h2>
+    <table class="experiencia">
+        <td id="presentacion" width="400">
+            <p>Profesional en Diseño Gráfico con 10 años de experiencia profesional, actualmente estudiante de Ingeniería Multimedia. Con conocimientos en la Creative Suite de Adobe, en programas como Ilustrator, Indesign, Adobe XD – Figma, Photoshop, entre otros; manejo de ilustración manual y digital, elaboración de piezas de diseño editorial, creación, conceptualización y desarrollo de campañas publicitarias e imagen corporativa. Dominio intermedio del idioma inglés.</p>
+            <button align="left" style="border-radius: 10px;">Ver CV <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVElEQVR4nO2Yz2sTQRTHB/wDLJh03pvaQ4I9aq3Qi9g3CQgi9pZGFHaR/g+FQj3Ug/QgnsW2l/4NHjy0Bw+ebBbtoYd6KSo0u/ir4EEpFFZmyf5wu2Kzm2Szdj7w4CWzM/l+583M7oYxjUaj+S8pX5SXAOW+CpWzojGKtAQoXRUqZ0WDo3zkG1A5KxocaTE0QIusaFwYvy440GsVKs9bz9kEsXZLBSsiALWGvwdUzooGAC2HBmiZFQ1e/GNUagO5oiuQN7oCeaMrkDeFqUA58uooBE39y4C6ZqheNQHkQiAU5DfEmWt/M6Da1DXhM5JcyFs/K43RRFSUbyJuIC5e5aUxmmDDgBDyKgf6GoqjQwBa8z+jkM8T2qfZMJFg4lck/znU4n1OrPFYRPdI3wGgFW8WgVZ6YSKNeEipwYODPOr88FG3fZM2bJqZ5xk0sOjsdd25Y8I/79MuG8iiIauBXgBn3AAdh52b59R3lmFvWabjDiLeGAeBeCHqkTZ781QGOMhPwY0I5Q3PwIDEW6bjbsy+CgxcqTT+aDudAZSrkT9nP3BO9W2j3Xfh20bbEz9ZnQsMzE8/TmGAz1QA5Y/4eY5Yc+9NPXRbpu0N9mJux52sNhNvXL2I6vht92Vzt3sDilEhbwKSkzTw1t09b7AlWu+r+PU7m7Eq2cesGxBliSM94yA/ClHrewWEqLuXKw1v2cRnvhP7LC2WYT8d5Ea2EqJlOE9SG3j34HDEMuz3ORrYs5rfz7MsvJ1vl1uGvWaZzpcBzvrnlmmvWvcPSpnEazTsBL8Bc04T76tLxoYAAAAASUVORK5CYII=" width="20"/></button>
+        </td>
+        <td class="estudios" width="400">
+            <h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEYUlEQVR4nO2ZXWwUVRTHJ/FNBVOqe88Z20KBYkPFYBqrQPfeHdtSgSpRaWvpDEWxREOUxKhEXgRCJVEefDA1RhLEKtHgAw8SH0RsFQJlNkJDH9QABqR7p1D8BPGD9poZ2NmZ7nQ/Zmm3k3CSk0nuPXvm/zv33Du7s5IUACsoqL0DgD5gXqUgGSFKBQA7BMhGAJkwrwToQYDqudJkNyKHmwnQK9eFu9wahzCVJqsRQjcAsuGEaHqJIDtKgF12jJ1ErLxVmmyGGN7urjg9gbioxJwDUKYDspg9B3SpNJkshOxZR79faxdkrzljAFhHfC6EdGPapIjsToK0kwD9GZBe9erJLPz0XUVsttd9ANjzo8XbGxfZC/E4AuyjxAqw51KKJ4QqgNTIUbTbgb3sUfkWp3iCLGqdNi4I+qK5sZ17Q5bZ/JSVv+Hix1gBALrb0fOHzfOekLrbCNJuJwQgtcUTZLtSVx/pu4lji50xV0OSGm+RxsEIiTwIwPoI0j3TplVNjY8XFi6ccv05MKoQtL+kpLogdVJgZ20AS/yNNYBwm9kmIaQrU8UhsvZReyNGyIJQ+hs4Nqyz8kdah6bqGu/QVd4X1fgpP74h/N4QYsTKXVpcPzxW3Bblw/OyHHHun4vxIzUDgMSSucRbwg3h11+PfCDi4gGZWDZvvWfcttpPhCwrdtzCslXiy6bvz/a2DYJvALPyuYjf2XDAJUopXyu+bfkpKe6Nmt1u8XNWi6+fOhmf3+EfIMfqL7t3fVrxHQ9/7BK/aM5q0Z0QL3TNGMxlBQb8ij/Sek7MKFps59y34kRSzFaly9Ve4XueFt0tp1wxusZH8gLQ9WiPne/+WU1ZVz6ab4BXqjvtfG2Vm11zm5Rdrsqz8jWip+W0Zx5d5cN5AaivWGfn20jfF2/V7hFa5SYxf2aT6yGllLfb4r9q/lG8WfupdU3k4lfzAjC7eGnarxpK+VrxjaPyC8pWWePm1QHwX14AKqY/Pqbw0qJ60V61TRxaecb1GWeMPa7yf/MC8PbivfYpVHJ3nXhk7jrxanWn6HqsR/SqA56f8QLQNeOfvACYbh6Jn6/oE4dbz2UUD14AqvF33gCydfBsIeNKsAE0469gA6jG5UAD6JpxKeAA/M9AA0Q1/nvQAX4LNICu8l+DDaAZvwQaIKoaF4MOMBRsAM24EGgAXTXOZwiQ/GJrIgF61QFbvPlbOeu3Es5Xi4g0PNEAOxsO2AD3lT7pmONGZgCjXu6G5EhNrxobd4CjaswSb4qO339NVUciRuU8MwDCZgCyP9L9jvXyh8o0sb/5hyRhy+e9lHWuWcVLxBeN/c4ViEmZmll1QMr9QGyv+8wFsPeJ77LOMbN4idjRsN+Vx2xjKRuT5ZpCQPaO2UayHBkZ7xWQZcVqH7Nt3JW3W+iY5NeiKt86UZs4OparfItvgIPPXJiia/x4HsUf628cvN03QBzCrMI1EH9/cGTrusaP6yrfbN47J/E37aZJSfY/Wz2/MdujS0IAAAAASUVORK5CYII=" width="25"/>Experiencia</h4>
+            <p>10 años</p>
+            <h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9ElEQVR4nO2Zv0vDQBTHs+ggTkK9F9tJQSQOCl0c5I5SEN2rgybdXBwdW/+T/gUiLqWTDjoI/uhV23/Bgo1SBwsKupxcW9pIG22by6XB+8LjIJDL+7z37t1x0TQlJaUBFJ8AwFkEpISAfIJOmM/2hXR8GYkkFjSvMgxjEnR8LcFp1mv4wjMAADkKxnnCeLY9AyAg951JAR/yctJ8FjggPE/mrHleTpoEgUgAt8lu9qoxaton1Kw1qGUzkQaOb7afVe/ST1vCANrOv4p2nLoDMGraj8IAmpH3yXnqBmDZTCBAt2zyqTJbmd8eusPwd/KpckAAjkkzODdym8zgXPAAoc8ADeUasBQAG5sM5P9YA7/VOh0HgEG6kFu3oVIAgFRaBzlSCWcGYD0CgNN8DGUX6icFYKkM/KMSmtXxLgJ8xUdZAKvzO03n+ShiH2i0o9GQBZBPlVkW53rab2jOQtTFFICmMmCrEhpaahFbY9SFkLzrdcYtsbQvFiAIowpAd0Skfb3u944LfmUgFlub4c9CBYCAfHQzQAqGYUyHCgAAnwe1gGNzSe8AmhafAugcqaXaxvKBCIAWBAJyhoC8S4l8NNl0vpCqiAL4qaJZOw3NTtxPt9bLIjXtulQAc8RfTG56SNejRcs+plbtTYbzJfN5UyjAuOgbD6nhu0W76gwAAAAASUVORK5CYII=" width="25"/>Educación</h4>
+            <p> <strong>UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA - UNAD</strong> • Estudiante Ingeniería Multimedia</p>
+            <p> <strong>ESCUELA DE ARTES Y LETRAS</strong> • Profesional en Diseño Gráfico - énfasis en Diseño Editorial</p>
+            <p> <strong>CORPORACIÓN UNIVERSITARIA - CIDE</strong>  • Tecnóloga en Diseño Gráfico</p>
+            <h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyUlEQVR4nO2Za0hUQRTHJ+gdFSU4Z3a3zB5Sm1pW9G7G9QFlltrDrL3X/BB9CCoqCiKDiIKioA8RBUVlQdELLAqKoseHTN0r9aFAiz70sL1BCQZKUjExa0x317uuD9I74YHDwr1z7/x/e2bOmZmLUJ/1WZ+FGQDdgYHWArAKAHYTgB4HYBrGixKR023ixMWDgNCfQBi3dWBnkJNt9OjZI6KKb/VGpAoABtZECMsHYKVA6G0A9hoTusXa3uOZOwQ5OAKN7bUFYNvEcMNA73q93oHIyQA12ufFht/cGvpd3TBSXMNAn8toEXYCORnA0M1mQzd5qwd/GFrwXn7qzlPW+RFP6DonA3A7Xzlt1xdLhqpPSGCDlQJ4uu4d947Lt6RZukkpAEM3+T5fmbVOvFYO4Jn/A58wZokFYqFXKQBDN3nh9N0SYEny5svKARzJuioBliZv/V7p/zJCKYAbBQEJkDahkBta8IBSAJXaR+52ZYSec7l8/G7hy2/GxvqhygAYusnTJ2+QURBzokb/vEIpgAvLHnNC0iXEoYwr5UoBGLrJi9L2SIDU8aubEJo5QCmA+4W1ETWB7lAKwNBNXkrPSAC3y9fk8WS4lQKo0ur5nEmahCAkvSyyn3gXXY4JDWBgLTF2gGJj1RJqi1lujwAIP5/7SE5oF8losW54sIsuiyUaosHEguguwOO1b/m+9DK+IKlEdirqwrmcRyABCDW6DEBY9T8DOOC7yMe4s9p0WpRWKu4flwCWYRMXN394Z0aFePafAaQkrgwTPtadzdfP2s8r/O/FLu5nTbGZKt5lbYM6aB1+pjsAkxOWy05EJnqy9m14G828owzAgzV1be4H9GC9ygC1RrFZoBxAQAterCn+RDni/TotpqcBksbmyk4eFr0JXYt8P8aspMMZpScBbq16IQuXyD7V2qc2ABj7porjSss66bQjAK7lV4YVrryU7fJemAig5ZaC9Arj7GEdET9qVNbIv1Gj32M0Z/2F8D8hrrMC7GVnbQuV1T3uTH45r8IWAANr6GoFhr9eFZMYY+oTZ52ELJphBUhOXNG+eFcmP5x5JSw6Ye8l7E63AYDmoK5YZJax+pRxeaGNzPWC6ojhFQw73cZ4Xrz44oOBNXdGNG5delR1WbwdgF2hsvGryCn2LHT6liMBxKqzXfGa+bXS/8HTK2IxoSeBsF/RQioWbdHFBxvFP99r4lFrFooqXvjBzEu2k9QxhoEeA0J/RKbH+Ukl/Gj2tahZxtFmRBkySBUz7Cfqe6SKBTTzSaR48cGvt3Wh/8F+A2SkmMv4pIDwAAAAAElFTkSuQmCC" width="25"/>Idiomas</h4>
+            <li>Inglés</li>
+            <li>Italiano</li>
+    </table>
+    </div>
+<div class="experienciak" id="experienciak">
+    <h2 align="center">Experiencia</h2>
+    <table class="tablaExperiencia" border="2" border-color="purple">
+    <td class="DG" width="370">
+        <h3 align="center">Diseño gráfico</h3>
+            <img src="https://lh3.googleusercontent.com/d/1-mJSeH0LdTXcKjDri-c9vo7cVAZwPVFJ" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/1X2D0fta472dZrzXqdi_NLamDhUuZYQSd" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/1V1uhgHa6r31zBf8Kp_9DFzQNUH9OLVcu" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/1jC4iMhHEnipo6UICM9h3s_XDNsxRZNqq" width="50" height="50"/>
+    </td>
+    <td class="ED" width="370">
+        <h3  align="center">Diseño editorial</h3>
+            <img src="https://lh3.googleusercontent.com/d/130J6OTRT7qtnaZ51g8aBtFQP61ciVze3" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/1-mJSeH0LdTXcKjDri-c9vo7cVAZwPVFJ" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/1X2D0fta472dZrzXqdi_NLamDhUuZYQSd" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/12prhtZ37R-xw_TgghoGfbzrPEbDfmf37" width="50" height="50"/>
+    </td>
+    <td class="E-L" width="370">
+        <h3 align="center">Diseño e-learning</h3>
+            <img src="https://lh3.googleusercontent.com/d/1vQYTj1SP4H5-i9XF8jUEYjPGS6e50Fu1" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/1LKfE-Z0PZ--AUSLxWRo5Yt4EaV_e5J3M" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/12uznf_dsEUDft_xmbZ3aXfS--vgZs5Fv" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/12W26jsX1mB8z8ecUE3v_mSLZZj1uNzjR" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/12q5IbDyc5ipI1AA2sN18K9jizEumOnwK" width="50" height="50"/>
+            <img src="https://lh3.googleusercontent.com/d/12kJF2hwDLc9iavi9bDmsy3X2_oujPXuJ" width="50" height="50"/>
+    </td>
+</table>
+</div>
+<div class="servicio" id="servicio">
+    <h2 align="center">Servicios</h2>
+        <table class="funciones">
+        <td class="editorial" width="370">
+            <h3 align="center">Diseño editorial</h3>
+                <li>Diseñar, elaborar y producir los catálogos, boletines, afiches,
+                    tarjetas, carnés de identificación de personal, entre otros elementos
+                    de comunicación visual que se requieran, proponiendo nuevos
+                    diseños y/o correcciones de los existentes.</li>
+                <li>Diseñar propuestas gráficas, así como la definición de estilos y
+                    aspectos gráficos en sus partes principales, portadas, capítulos y
+                    páginas de contenido; teniendo en cuenta los colores, tipografías,
+                    imágenes y continuidad editorial de las piezas gráficas.</li>
+                <li>Determinar gráficamente los medios esenciales para la
+                    comunicación de propuesta creativa del producto y su
+                    funcionamiento en soportes digitales y/o análogos.</li>
+                <li>Analizar el contenido, estilo y contenido gráfico; teniendo en cuenta
+                    la calidad, diferenciación respecto a la competencia y objetivos
+                    estratégicos para el posicionamiento de las piezas editoriales.</li>
+        </td>
+        <td class="eLearning" width="370">
+            <h3 align="center">Diseño e-learning</h3>
+                <li>Diseño editorial del material descargable y presentaciones, de
+                    acuerdo con el estilo y contenido gráfico requeridos para la
+                    elaboración de los cursos.</li>
+                <li>Diagramación de los contenidos temáticos pertenecientes a los
+                    OVAs (Objetos virtuales de aprendizaje).</li>
+                <li>Producción de elementos infográficos y de comunicación visual,
+                    para apoyar el contenido del material descargable de los OVAs.</li>
+                <li>Trabajo en equipo con el gestor pedagógico y el virtualizador de
+                    contenidos en el desarrollo de propuestas de diseño para los
+                    ambientes virtuales de aprendizaje.</li>
+        </td>
+        <td class="grafico" width="370">
+            <h3 align="center">Diseño gráfico</h3>
+                <li>Definir, investigar y analizar el sentido de la cultura organizacional,
+                    frente al diseño, valores e identidad diferenciadora de la empresa;
+                    teniendo en cuenta las necesidades de creación, rediseño o cambio
+                    de la imagen corporativa.</li>
+                <li>Planificación, diseño y desarrollo de elementos gráficos online en el
+                    desarrollo y diagramación de contenido web aplicando los
+                    principios de usabilidad y accesibilidad de contenidos.</li>
+                <li>Analizar el contenido, estilo y contenido gráfico; teniendo en
+                    cuenta la calidad, diferenciación respecto a la competencia y
+                    objetivos estratégicos para el posicionamiento de las piezas gráficas</li>
+                <li>Elaborar, estructurar e instalar los elementos de señalización
+                    requeridos para la identificación y demarcación de los espacios y
+                    sedes, creando los diseños que se requieran para tal fin.</li>
+        </td>
+    </table>
+</div>
+<div class="book">
+    <h2 align="center">Portafolio</h2>
+    <div class="top"></div>
+    <div class="gallery-container">
+      <button class="prev" onclick="moveGallery(-1)">❮</button>
+      <button class="next" onclick="moveGallery(1)">❯</button>
+      <section class="gallery">
+        <div class="row">
+          <a href="#item01">
+            <img src="https://lh3.googleusercontent.com/d/13-OdVCPP0c0h7rKjxc-wSpjBaFf5Xhed" width="350" alt="Image 1">
+          </a>
+          <a href="#item02">
+            <img src="https://lh3.googleusercontent.com/d/13AlBx5-5Nj0uf8MhjkCmjVmyUtF2XOjq" width="350" alt="Image 2">
+          </a>
+          <a href="#item03">
+            <img src="https://lh3.googleusercontent.com/d/139zmDT3H6kddnzLZWMepSXB-YShBP0t_" width="350" alt="Image 3">
+          </a>
+          <a href="#item04">
+            <img src="https://lh3.googleusercontent.com/d/138TLuBCe3aF7Rr8PPj_Pj9SLtkQuZjUK" width="350" alt="Image 4">
+          </a>
+        </div> <!-- / row -->
+      </section> <!-- / gallery -->
+    </div> <!-- / gallery-container -->
+  </div> <!-- / book -->
+
+  <!-- JavaScript aquí -->
+  <script>
+    let galleryIndex = 0;
+
+    function moveGallery(n) {
+      const gallery = document.querySelector('.gallery .row');
+      const images = gallery.querySelectorAll('a');
+      galleryIndex += n;
+
+      if (galleryIndex >= images.length) {
+        galleryIndex = 0;
+      }
+      if (galleryIndex < 0) {
+        galleryIndex = images.length - 1;
+      }
+
+      const offset = -galleryIndex * 350; // assuming each image is 250px wide
+      gallery.style.transform = `translateX(${offset}px)`;
+    }
+
+    // Mostrar la primera imagen inicialmente
+    moveGallery(0);
+  </script>
+
+  <script src="scripts.js"></script>
+
+  <div class="contact" id="contact">
+    <h2 align="center">Contacto</h2>
+        <table class="datosContacto">
+        <td width="400">
+            <h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADmUlEQVR4nO1Y20sUURgfu/wNe854y1QSBdHKKNQ5roopirjezR0r7KEHXyq6UARBl4cehLAk0yLpogYKIoKBUVKguRMRURQUBV52fewhe7G++A6Ozuxtdtfd2Zf5wQfDme875/eb831nZj5BsGDBggULFgKAkGKJEDZMCFsiVFojlAGh7BelksPLNYFQ9oxQ9m/dZ4smrdmItIhrU8qKhPCxb6eNsruBFrBRNqn1prQwJTrEWYD1pF5BYDtCph+MvDk7wPw9tDuhp402mEhDhBRlC4KwTTANTdttNnsOT18Nl5DSSRdEpCFT+AYBoWxEw+epcQAvWDWAP/m4woY7oaYRkRYMAzSnDeBWau+BAAku50qHInvmFafnjyJ7INY271zWptDfEARs5pw3ecXpuW8GaUVj443vdcWsyO7+iAQo8vJRM4lPt3yFzgPXISmxzEuAB+blFTlsAS9avrybcy7GnPjrth9wqrAH0pIO+z1O1/3mwhJgs0nNiWIpZKXWwhX7IMy1R1/IXPsinxvXCPY+WPdfDU8AZYPa8fz0ZuiuGAOX7N4ycZfs5nPhnN5kD2V2QF/VlD8BEJYAUWR5uWkNPgsU7zkOAzXTEZMfqJnmc3jPi2vdLB/hJxD6bVkAAvP/Wuljv1tcmdMFI3WzIRMfcyjQmHfeZ56MlGq4IPXBbPuCzj8qAjaK7MhPvkhacqVuYkpLOKmJhg8BiU81fYJj+6+CKNp1salJFdB1sBtm2r77jYuqANWeN3/mZLC4tTF47OE4HoOq76vWb5xgcmK5zlcU7Vz0ZOPHoDsWEwEb6VCvQF3uGZ90SE+ugrNFvdzw2vs+xozVKyGlXEwFqPak9g2UZ580/CxmWZ3wsOZlWMVOzBCg2u3KCSjIOOJDHMfwXiSnFTFTANpb5xLcqhjntYCG1zgWCXklHgKibcQSIFg7AFYK0ZCL2P8vZbwKeF7zS4lvbmMBAX7q4yVg1OHaEJCzyxGSAE1bhQ3HU4BLdkND3rkNAa35l4wFUCoVe71FR7C1oX6bm5U2ow6Xjjzao9oZYwEI7EUafdNEasmJZXCZPdARPl3Y4/Pz7m0nCm5sxjg9v4MKwEYq9iJjJWLv7hadgMyUakPy2k8Rl+yeNRCgplNJIbbzsCOGTSWzdkAU7bxgW/Iu6tJGswPtQrjgjS3Z3R+v00hRn77TfU/YCrCphH0ZbG2YSHyVrxnJk7dgwYIFIZb4D0w0ZTF4rO/TAAAAAElFTkSuQmCC" width="25"/>karemmalagon@hotmail.com</h3>
+            <h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGy0lEQVR4nO1Za2wUVRReH6hRE0No9567benDlkdFaGh4tLD3bh9USqENlFJoZ1oCqIBigwYFVJQIDdjII9hoBUEQqYaotKU8FBMCAmV3CBIeCSAopnSmgP4AfIDEa+5sdzuzO7udpbvoj57k/Nm5e+Z895zznXPvWCw90iM9EgYpecBqIxlWTBYjTL8ETE4ioL8hoLcQkD8B0zaE6WkA+jkAeQUhxwiLxXKf5b8Wm80eB0BXAtDLgCkLTclPAKS6T1ym7Z47jjGNQph+yHc4dMf1iniEgK4FGB19T5y3YlKGgP5qsKMyAP0YgIoYZ6VzkBZLeq/4ePpIVJQdY2wfijF9FoBsRECuGYBpByCTIuh6ei8E5CO/HcRkP0J0PK+DUGxZbaQQgB72t0drQ7NlQjBOfxRhukv3MiDnAejY7tpGyFGAgF7S26YN/J3h23kf5xEmn0ZH08fD9AJL7965TwCQel8QYYmEb9ogTN8287+jle3gFOUZkiBvkUTlmCQo1yRBvq2qqFx1CYokifJmvoav5bTKWck/nbpZsKE67xTbqEtQmiRRviOJCjOn8t/8P8cq2ogviLsubJUqNWzD0ybY+mNCe7JLlHebd9pYnYLcnBI7rknLTjZbTp+QAXCe1xZssJx3iu2iS5RvdNd5qUP3T71wMz42z0u1CNN5IXdYXZMKwDZWazZKSyq5gLGDDU4sZvtKz4YFgCQqbMP4fcyGHXcQ0D94XwkJAABdoeX5AMvuT0uaoqO/+aPWhQ2ApEbiR7an5HR1SM5z6kJAWr0AkKPAaNXckave821CAxOKWEt5a1hBSG4tM+0+nyq144HFQh80KtgZw5bfNpptVud9HXYALlG+4SxTkkwBACCva3J/g9EazjbFaa8aDmcFg6oiEQEmicpOUwDc87wXgOjnfLns4AafH77SEAD/PUIAmFR+2d51BDA55XHGqPr5TnBjq/K+8nM+s990drDs57A7XpO7XY1sdU790a4joBl13SNxp/CWz7smN3qkvJX1j5+gA1Cb3xx2548Kl1lcTK5qPzWhiP0gyNYuAHTyf2pq6kO69BHkmVrjy7M/0wGgA2Yyp9AWdgDQYT/Gls0kQZ5uGkBy8tiHdenjHsy07MByU2frQLwc5l5wpLzVazsuJoe5RGVTcACYXuksYv0xT50qfV7QPPkkS+5b4H0J78orcr4IG4B9pWe9tvv1Hc9/cwYF4DklIaC/IzTmMX0ElGtGL1lf8I0aXs+LbLYs9pq9To2Q79rZI2vYxCEL2JYJ+00BqC865LU7MkVkLkG5EhRAdHTWkwjTZRgTP8pyicqtQC9a6tjix0r5T81jDcXHA67JTZ3N6sbtCQqAR9Oznvcel6D8ZblbCQaA65uOjWoKaZ3k0ZiStogtsH/AYmNyjHvHiHcD2ixPX+Jdt5DUdQ9AoBTS6tq8BpYQmxfS1Upl+lJDWy0+VM3TqcsUCgrAoIiNtKn4hB87BdOa3O2Gdmrzd3rXDEqc5KHo4EXsEX6fA0Dmuq9MPADkzaEwSF3+HjYmdY6aRoGcnzhkQcDekTXwOe+6lzJWd1B3FzTqEYRJjeZENsyokZnV3SWn2CL7erWoORXG2nJYZkoFW56zLaDzvKtr+X/vlDMdz9oqTQFQ73283O5mJO0oEUk9MO0iG5I02Qtg1rBq9zNBvt3lKOGhUs2Z4IZ2pHDfOETOeZcos5K0hV7neRHzk5n7udxgLn2Q/QXNSN2ofcavPiIJoCpzra5G1uTt0DxvH20yfWijxwAH4/tcEpTmSOx8lY/zs4Z3pI67eHUbGVB4uvC08Rjh6eQHoKL9yXBeoxyYdlGXNlwLB89XJ9GO3L/eIsiJpgAgRLI07HPeeFV6r8WODW9tLTzYbedr83fqCtbj/KGyS57I/OMU5KkWs6J+cek09r7nd6t1dBIAnQNAdmgjRAbMZOueaWQtgvnbCL6z3PEsDc9r08a78xyAoLxh2nk1AkCOe/MfyGoAsg6AnuuqmybHjWNlQ5ewZdlbWX3RYba39Aw7XP6LOs9/V3pOHQP4YMZnmwHxhX7/7x8/wadgVV0RkvNqBDBRTI4AF/mtWSgzj5HGxeSoPN9Jle6cDyltdBHw/ZDR2Q9uAiZNCNMXo2JIiudqEWHyDmB6IVTH+WxTlbFGjZSejZRG0wUb8F4U0138MykAPcFrAiF7tu/x0lf4DQb/hPp0wsRvBycWX+cHcH4Y52NDSt8ClpFSoc7z/KCzrfB7/QghqN8Ndrgq20dZ/i/CWz4/gEuC8olLUFzqRw1RudVxprjKp0qXqGzis42p8aBHesQSEfkXPBwTz0BU5A4AAAAASUVORK5CYII=" width="25"/>3112288122</h3>
+            <h3><img src="data:image/png;base64,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" width="25"/>/in/karem-malagon</h3>
+            <h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyUlEQVR4nO2ZW0gUURjHj91vFBbNOWddMS0iVjTKKB/snJWszG5EbSXNKbogXYxuEN0eeoweeoro+lY9+BAVYRhBCIGXOZWBRfWwQYUzRkUk3bMTR9f1OOyouzurK+0Hf2aZ+WbO/zffnMvsAJCKVKQiIQEhnQYxOYcwOQ1hcS4YSgHhwj0Q0Z8IUyHV8RuR3SDZIyuLjkGIXukybhdE9CrGBeNAMoamFeVARJ70MIyJIWWDeCwfL5BMAaF/AUT0U487jsglWZFIVYGIfMDYvxQkSyBErivmvmuY7rDnYEwqICI/ukHIH4TIcQBAGhjsgJCsR5j+QpgGEaLznPIqFpzaOiOz7KutUjcnT54/EQx2dHbOwHCn44beupkz69v9DS9FiW9nu61fvBywoRYhyhCi1zSNFvYn/9XeV6MN3bzImSW61Ki3iMrCMwJjvzJKkTZZyYQZ9/l8oyCm57tLT5/2dU79prdezqx61byqs6V3RLZ3yZ+eIxe9AEDBSFfNT51KEUTkoW1cr+rtnEbWQjkzLSfzXbq19okomF5uh6iVbbpjPqN4NkTkrX1C8noLx0bKF0Ck8U3WPs7M332Z5yHVlgfF6ryDf21tvJFtx2Ve00ieHLNtQ98hp/zmQOsEzqyq/hrnigxmisNF5wT2+MMgcm7BeOHcGO3TEQiRJuViHzVMFjtlN7D3M7luNcdiniu6WFYjcjKXhR8piOkz2f+ito8Q1ZWSftEyivKdch/p5krOzM/xmuch3VjDJUR3JTxkW9QAENNq5S4cjZRTFRDDDWaeNHSz3S3zPKQT5LIy2fnvRQ+gdNxIi68G9m4K180at43zkKoDzWGAmZkrftZttGBUAAjT8GwJABimHqvXzWzOrGCizPPQZNfVvsdTLPcF+ebW6dEAhC+g7n+w5fUYzqwXiTTPQ1I9hPYFm3RzfFwABrMODoR5HhlAcGYeiQ9At4zBBbAexVkBs83e0J11T8Vi3y7hzVgU8VVSVWbGIrEyb7+Qq1IeA4BsPy6ASA2V+Hb2adyujXOOx1oB4TqA19P3nbcrP3tt8gA4NWRXzYbn4bzcrDUpgFQFeOoRslKd2DH+q1HI4ylWV41DD2BV/oGOPLkdkgCNekvHa6DcDkkA3k8NKABUvrCkp5dMGmiA2vJgjxVs9AC2DxNuK9tbGjZ0e12TmJ0TcMwls7bHAADpikQCyD92ecjQMXKp19zzy+5GD9AJ4V8OMW1UHye3VJpb2WsF5BJd3nm7+agAIkU8fcAtgf8bQLcaBtO8wcy6uABSAdyNf42xOox7b5raAAAAAElFTkSuQmCC" width="25"/>Bogotá, Colombia</h3>
+        </td>
+        <td width="400">
+            <form action="/contact-form" method="post">
+            <ul>
+              <p>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+              </p>
+              <p>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_mail" />
+              </p>
+              <p>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </p>
+              <p class="button">
+                <button type="submit" style="border-radius: 10px;">Envía tu mensaje <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFDElEQVR4nO2Ze0wcRRzHt7GJjYlJlfZ2ZiGgFIp98JAjFVtu5mhFQeU4Xm242z2CNRATUqqtrZpKMWlM/adN//BRo/ZF0dKaSqsV/7GxvN090NqGRrRAKeyCGmIF26aFNbtl4LgXeLcc1+S+ye+Pm9zefj8zv5n5zRxFhRRSSCEFrWja+AIN0bc0RDwA+MCScBRL3S+iGVwCIJanB7pLQ3SUYdKWU8EtvBBAPOgKMA3kGMOkx1HBKAjXRRKzNEB/6Bj8DA1QvTsQAPBxANAKKpgUFYUX0QDdnDA6TgxmrtqaHR3xXIObURkDANUAkLaSChbREJ1yGIX9dlYsETjxjsBJcrXpQmdS9MZmFc4ZBKKzDIOenG//lA6iDAeA4UZLzzXFvGNU5zReTVlmaXMDMq6AQGhInk+GBQDgX4mpKnyo1xmAxOc5TdfXxLL2oAOhafw6MbP6sbxuTwAkjpsa/0qN4a64A1FSkmE2hAUUAIC0pTRAt4iRWnPrzZkg1BExNQ2nxnKdLiAAvRtQAEXq6jJhwJy47cpsAEicyGkZMcS99NskCEC2qaXakByQnR0AIyYA4Uz6SIOlZ9YAJL7Ka7/9Yda5L1utfRETnWJzTC1deFrC3EJAdIlA7MKfuKxGsw2ek24LrHg0/vH8j9zNEd1cgUCIt5KXxUVm9/kKQOL7TV1jG1aU9Xma7JqDREXhxTTAo+RFNabGUX8hlKjNbR3PWPnKgEcQHYrXDIKG+Ah5wfPxFZ1aAAgTcTK3Tc5cVf6nKwi6A4ChTBOApYxhLflhCI3/Xii6OmmgydIrVxmPyG+gg35F6VN75aTowtHpIOhuRMT6cE0gAMA/T03mz3oIQNma9zyU3doETRu3aA5gS3nncKAAchK215zH8kLNUghANFKq3wMFTvybpFCl8ZBcnrrPr+CSd8v6ZUVKik6ah4xRri+8LPOc2MWz4ubaQvkBvycxDdDHSpvAiR9oshqZW2RzwvZpxu9tnOvl3cbD07/PSp/6vYxCmK5XAaxSqj/GT5hb5Jz4bS7Glc95iTvkU7k/uj7HijdkSl7g80ZGA9RB2nlWLPd12SxI2unWuCnhVRXM4/Os2OhXKaGD+GXSLnDSL4EyznPiuMCJdQLXH+lzMQcgvhEWtvbhe+YH02a/47o3zjDpqvFab8ZZcYxnpbP24gE1bf0qp2mI3yftPCsem2vjAifVCsX9T1C+CkK8xPFAQw7rbdz1MIGVPB5uqk0NqkFPxk+aW2esWNuLhvw/K9AQ7Zg6TeHmyd7npNe8GXfeiBTjykiczrN76XHpFs+JB8mZQfNDPQCGYgeAy44vVzaarNVb3BovSt4l1+V3eJuc/wicdECwDkFqLq9VINQ/pLQLNjHd2QSrr3Rj/G35TH67lzmi7uJ7mzdfe5QKxMUWaedZ6QtnM0olSXZOS3KlXFfgpcdZaYjnxKqO4uHF1FwpJibzQXdXi+uWl2S9GF8x9nSsTblCcUwDNf/PFV7y1uMSz4o7hdJ+dSQDe7kLUQYN8HeOabIp6a1Z7QE8K3ULVqnifHH3Iiqw1+tI9FTeKqmy/9nTM5gXf7ezUqnfZbCvUlYd5yOeYtyqr5TPFPzkzfhFnh20+Vz2aikAcCYN8TfKX0wbE9/s8m5carWzYvb/rhQDJWX18JDjP/CslEEFuwRO+tqpVqkXrP0G6n7RRUvvIwIr7hE4cZ+dG0iZbz8hhURpo/8ALrOb8RrGZCQAAAAASUVORK5CYII=" width="20"/></button>
+              </p>
+            </ul>
+          </form>
+        </td>
+    </table>
+    
+</div>
+</body>
+</div>
+<footer style="background-color: #030405;">
+    <table class="foot">
+        <td>
+            <td><a style="color:#ffffff">Política de privacidad |</a></td>
+            <td><a style="color:#ffffff">Política de datos |</a></td>
+            <td><a style="color:#ffffff">Términos de uso |</a></td>
+        </td>
+        <td class="datosMail" style= "width:250; padding:90px; align=left">
+            <p style="color:#ffffff"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADmUlEQVR4nO1Y20sUURgfu/wNe854y1QSBdHKKNQ5roopirjezR0r7KEHXyq6UARBl4cehLAk0yLpogYKIoKBUVKguRMRURQUBV52fewhe7G++A6Ozuxtdtfd2Zf5wQfDme875/eb831nZj5BsGDBggULFgKAkGKJEDZMCFsiVFojlAGh7BelksPLNYFQ9oxQ9m/dZ4smrdmItIhrU8qKhPCxb6eNsruBFrBRNqn1prQwJTrEWYD1pF5BYDtCph+MvDk7wPw9tDuhp402mEhDhBRlC4KwTTANTdttNnsOT18Nl5DSSRdEpCFT+AYBoWxEw+epcQAvWDWAP/m4woY7oaYRkRYMAzSnDeBWau+BAAku50qHInvmFafnjyJ7INY271zWptDfEARs5pw3ecXpuW8GaUVj443vdcWsyO7+iAQo8vJRM4lPt3yFzgPXISmxzEuAB+blFTlsAS9avrybcy7GnPjrth9wqrAH0pIO+z1O1/3mwhJgs0nNiWIpZKXWwhX7IMy1R1/IXPsinxvXCPY+WPdfDU8AZYPa8fz0ZuiuGAOX7N4ycZfs5nPhnN5kD2V2QF/VlD8BEJYAUWR5uWkNPgsU7zkOAzXTEZMfqJnmc3jPi2vdLB/hJxD6bVkAAvP/Wuljv1tcmdMFI3WzIRMfcyjQmHfeZ56MlGq4IPXBbPuCzj8qAjaK7MhPvkhacqVuYkpLOKmJhg8BiU81fYJj+6+CKNp1salJFdB1sBtm2r77jYuqANWeN3/mZLC4tTF47OE4HoOq76vWb5xgcmK5zlcU7Vz0ZOPHoDsWEwEb6VCvQF3uGZ90SE+ugrNFvdzw2vs+xozVKyGlXEwFqPak9g2UZ580/CxmWZ3wsOZlWMVOzBCg2u3KCSjIOOJDHMfwXiSnFTFTANpb5xLcqhjntYCG1zgWCXklHgKibcQSIFg7AFYK0ZCL2P8vZbwKeF7zS4lvbmMBAX7q4yVg1OHaEJCzyxGSAE1bhQ3HU4BLdkND3rkNAa35l4wFUCoVe71FR7C1oX6bm5U2ow6Xjjzao9oZYwEI7EUafdNEasmJZXCZPdARPl3Y4/Pz7m0nCm5sxjg9v4MKwEYq9iJjJWLv7hadgMyUakPy2k8Rl+yeNRCgplNJIbbzsCOGTSWzdkAU7bxgW/Iu6tJGswPtQrjgjS3Z3R+v00hRn77TfU/YCrCphH0ZbG2YSHyVrxnJk7dgwYIFIZb4D0w0ZTF4rO/TAAAAAElFTkSuQmCC" width="15"/>karemmalagon@hotmail.com</p>
+            <p style="color:#ffffff"><img src="data:image/png;base64,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" width="15"/> Testimonios</p>
+        </td>
+        <td width="300">
+            <p style="color:#ffffff">2024© Copyright. WEB PERSONAL KAMB. All images and contents reserved</p>
+        </td>    
+    </table>
+</footer>
+
